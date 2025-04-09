@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaaSify — Modern SaaS Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {},
+        },
+        plugins: [
+          tailwindcss.forms,
+          tailwindcss.typography,
+          tailwindcss.aspectRatio
+        ],
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">SaaSify</h1>
+        <nav class="space-x-4">
+          <a href="#features" class="hover:underline">Features</a>
+          <a href="#pricing" class="hover:underline">Pricing</a>
+          <a href="#faq" class="hover:underline">FAQ</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+        <button onclick="document.documentElement.classList.toggle('dark')" class="ml-4">🌙</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 text-center bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-4">Simplify your workflow with SaaSify</h2>
+        <p class="mb-6 text-lg">The modern tool to manage, organize and collaborate better</p>
+        <div class="space-x-4">
+          <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get Started</a>
+          <a href="#" class="bg-gray-200 dark:bg-gray-700 px-6 py-3 rounded">Watch Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-10">Powerful Features</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white dark:bg-gray-800 shadow rounded">
+            <h4 class="font-bold text-xl mb-2">Easy Collaboration</h4>
+            <p>Teamwork made simple and efficient with real-time tools.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-gray-800 shadow rounded">
+            <h4 class="font-bold text-xl mb-2">Analytics Dashboard</h4>
+            <p>Visualize your work with powerful charts and metrics.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-gray-800 shadow rounded">
+            <h4 class="font-bold text-xl mb-2">Custom Workflows</h4>
+            <p>Adapt the product to your process, not the other way around.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-10">Pricing Plans</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Free</h4>
+            <p class="text-2xl mb-4">$0/mo</p>
+            <ul class="mb-4">
+              <li>✔️ Basic features</li>
+              <li>✔️ 1 user</li>
+            </ul>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">Choose</a>
+          </div>
+          <div class="bg-blue-600 text-white p-6 rounded shadow transform scale-105">
+            <h4 class="text-xl font-bold mb-2">Pro</h4>
+            <p class="text-2xl mb-4">$19/mo</p>
+            <ul class="mb-4">
+              <li>✔️ Everything in Free</li>
+              <li>✔️ Unlimited users</li>
+              <li>✔️ Priority support</li>
+            </ul>
+            <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded">Choose</a>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Enterprise</h4>
+            <p class="text-2xl mb-4">$49/mo</p>
+            <ul class="mb-4">
+              <li>✔️ Everything in Pro</li>
+              <li>✔️ Dedicated manager</li>
+              <li>✔️ Custom solutions</li>
+            </ul>
+            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-10">What Our Users Say</h3>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="p-6 bg-white dark:bg-gray-800 shadow rounded">
+            <p>"SaaSify has transformed our workflow completely. Love it!"</p>
+            <h4 class="mt-4 font-bold">— Sarah J., Project Manager</h4>
+          </div>
+          <div class="p-6 bg-white dark:bg-gray-800 shadow rounded">
+            <p>"The best SaaS product we've used in years. Highly recommend."</p>
+            <h4 class="mt-4 font-bold">— Daniel K., CTO</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-16 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 text-center">Frequently Asked Questions</h3>
+        <details class="mb-4 bg-white dark:bg-gray-900 p-4 rounded shadow">
+          <summary class="cursor-pointer font-bold">Is there a free trial?</summary>
+          <p class="mt-2">Yes! We offer a 14-day free trial for all new users.</p>
+        </details>
+        <details class="mb-4 bg-white dark:bg-gray-900 p-4 rounded shadow">
+          <summary class="cursor-pointer font-bold">Can I cancel anytime?</summary>
+          <p class="mt-2">Absolutely. No contracts, no hassle. Cancel anytime.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="max-w-xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 text-center">Contact Us</h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" class="w-full p-3 rounded border border-gray-300" required />
+          <input type="email" placeholder="Email" class="w-full p-3 rounded border border-gray-300" required />
+          <textarea placeholder="Message" class="w-full p-3 rounded border border-gray-300" required></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 w-full">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white text-center">
+      <p class="mb-2">&copy; 2025 SaaSify. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Blog</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
